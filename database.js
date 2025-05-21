@@ -4,7 +4,7 @@ const { DB_USER, DB_PASS } = require("./config");
 let database;
 
 async function mongoConnect(callback) {
-const uri = `mongodb+srv://${DB_USER}:${DB_PASS}@cluster0.j7wvfuc.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${DB_USER}:${DB_PASS}`;
   const client = new MongoClient(uri);
 
   try {
